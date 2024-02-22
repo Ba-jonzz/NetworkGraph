@@ -125,7 +125,7 @@ const stylesheet = [
       width: 'data(options.size)',
       height: 'data(options.size)',
       'border-style': 'solid',
-      label: 'data(label)',
+      label: '',
       'font-size': '13px',
       color: '#5A88FF'    },
   },
