@@ -4,7 +4,7 @@ import NetworkGraph from './NetworkGraph';
 const MyApp = () => {
   return (
     <div className="App">
-      <NetworkGraph data={dataElements} onHoverLine={(event) => (<>hello</>)} onHoverNode={(event) => (<>Node</>)}  />
+      <NetworkGraph data={dataElements} onHoverLine={(event) => (<>Tooltip Link </>)} onHoverNode={(event) => (<>Tooltip Node</>)}  />
     </div>
   );
 }

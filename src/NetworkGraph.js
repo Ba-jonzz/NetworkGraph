@@ -69,7 +69,8 @@ const NetworkGraph = ({ data,onHoverLine,onHoverNode }) => {
         layout: { name: 'preset' },
         minZoom: 1,
         maxZoom: 2,
-        userPanningEnabled: false,
+        boxSelectionEnabled: false,
+        autoungrabify: true,
       });
 
       cyInstance.on('mouseover', 'node', handleNodeMouseover);
