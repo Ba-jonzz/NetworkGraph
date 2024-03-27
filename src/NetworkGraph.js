@@ -66,7 +66,7 @@ const NetworkGraph = ({ data,onHoverLine,onHoverNode }) => {
         elements,
         container: document.getElementById('graph-network'),
         style: stylesheet,
-        layout: { name: 'preset' },
+        layout: { name: 'cose' },
         minZoom: 1,
         maxZoom: 2,
         boxSelectionEnabled: false,
@@ -113,7 +113,10 @@ const stylesheet = [
       'target-arrow-shape': 'triangle',
       'target-arrow-color': 'data(color)',
       'line-color': 'data(color)',
-      width: 'data(size)',
+      'width': 'data(size)',
+      'target-arrow-fill': 'filled',
+      'target-arrow-shape': 'triangle',
+      'arrow-scale': 'data(scale)',
     },
   },
   {
@@ -122,12 +125,13 @@ const stylesheet = [
       'background-color': 'data(options.bgColor)',
       'border-color': 'data(options.borderColor)',
       'border-width': 0.8,
-      width: 'data(options.size)',
-      height: 'data(options.size)',
+      'width': 'data(options.size)',
+      'height': 'data(options.size)',
       'border-style': 'solid',
-      label: '',
+      'label': '',
       'font-size': '13px',
-      color: '#5A88FF'    },
+      'color': '#5A88FF'    
+    },
   },
 ];
 
